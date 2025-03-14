@@ -1,4 +1,4 @@
-import {DNA} from "react-loader-spinner";
+import {Triangle} from "react-loader-spinner";
 
 import chartUp from "../../assets/chart-up.svg";
 import chartDown from "../../assets/chart-down.svg";
@@ -8,7 +8,7 @@ import styles from "./TableCoin.module.css";
 function TableCoin({coins , isLoading}) {
   return (
     <div className={styles.container}>
-        {isLoading ? <DNA width="1200" height="150"/> : (
+        {isLoading ? <Triangle height="180" width="180" color="#ffaa0c"/> : (
             <table className={styles.table}>
             <thead>
                 <tr>
